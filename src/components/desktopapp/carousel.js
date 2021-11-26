@@ -46,29 +46,7 @@ const Carousel = () => {
     return (
         <>
             <Image src={gallery[index]} fluid style={{height: '70vh'}} onMouseEnter={onMouseenterhandler}/>
-            <TransitionablePortal
-                open={isShown}
-                transition={{animation: 'zoom', duration: 500}}
-            >
-                <Segment
-                    style={{
-                        left: '30%',
-                        position: 'fixed',
-                        top: '30%',
-                        zIndex: 1000,
-                    }}
-                >
-                    <Header textAlign="center">This is a controlled portal</Header>
-                    <p>Portals have tons of great callback functions to hook into.</p>
-                    <p>To close, simply click the close button or click away</p>
-                    <Button basic animated color='green' style={{marginLeft: '38%'}}>
-                        <Button.Content visible>Next</Button.Content>
-                        <Button.Content hidden>
-                            <Icon name='arrow right' />
-                        </Button.Content>
-                    </Button>
-                </Segment>
-            </TransitionablePortal>
+            
         </>
     )
 }
