@@ -72,10 +72,10 @@ const Navbar = () => {
           Workers
         </Menu.Item>
                 <Menu.Item
-                    name='coffee'
-                    active={activeItem === 'coffee'}
+                    name='food'
+                    active={activeItem === 'food'}
                     onClick={handleItemClick}
-                    color={`${activeItem === 'coffee' ? 'yellow' : 'none'}`}
+                    color={`${activeItem === 'food' ? 'yellow' : 'none'}`}
                     link
                 >
                     <Icon name='food' />
