@@ -1,8 +1,7 @@
 import React from 'react';
 import { useState, useEffect} from 'react';
 import { Image } from 'semantic-ui-react';
-import photo from '../../images/photo.jpeg';
-import fin from '../../images/fin.jpeg';
+import virtual from '../../images/virtual.jpg';
 import {TransitionablePortal, Segment, Button, Header, Icon} from 'semantic-ui-react';
 
 
@@ -20,7 +19,7 @@ const Carousel = () => {
         setIsShown( false )
     }
 
-    const gallery = [photo, fin]
+    const gallery = [virtual]
 
     const nextSlide = () => {
         setIndex(

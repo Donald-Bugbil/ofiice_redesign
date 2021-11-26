@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Icon, Menu } from 'semantic-ui-react';
 import Home from './home';
-import round from '../../images/round.png';
+import oti from '../../images/oti.jpeg';
 const Navbar = () => {
 
     const [activeItem, setActiveItem] = useState('home')
@@ -14,14 +14,14 @@ const Navbar = () => {
         <div>
             <Menu icon='labeled' secondary pointing fluid widths={10} >
                     <Menu.Item position="left">
-                        <img src={round}/>
+                        <img src={oti}/>
                     </Menu.Item>
 
                 <Menu.Item
                     name='archive'
                     active={activeItem === 'archive'}
                     onClick={handleItemClick}
-                    color={`${activeItem === 'archive' ? 'green' : 'none'}`}
+                    color={`${activeItem === 'archive' ? 'yellow' : 'none'}`}
                     link
                     
                 >
@@ -33,7 +33,7 @@ const Navbar = () => {
                     name='chats'
                     active={activeItem === 'chats'}
                     onClick={handleItemClick}
-                    color={`${activeItem === 'chats' ? 'green' : 'none'}`}
+                    color={`${activeItem === 'chats' ? 'yellow' : 'none'}`}
                     link
                 >
                     <Icon name='comments' />
@@ -43,7 +43,7 @@ const Navbar = () => {
                     name='tasks'
                     active={activeItem === 'tasks'}
                     onClick={handleItemClick}
-                    color={`${activeItem === 'tasks' ? 'green' : 'none'}`}
+                    color={`${activeItem === 'tasks' ? 'yellow' : 'none'}`}
                     link
                 >
                     <Icon name='tasks' />
@@ -54,7 +54,7 @@ const Navbar = () => {
                     name='wall'
                     active={activeItem === 'wall'}
                     onClick={handleItemClick}
-                    color={`${activeItem === 'wall' ? 'green' : 'none'}`}
+                    color={`${activeItem === 'wall' ? 'yellow' : 'none'}`}
                     link
                 >
                     <Icon name='newspaper' />
@@ -65,7 +65,7 @@ const Navbar = () => {
                     name='users'
                     active={activeItem === 'users'}
                     onClick={handleItemClick}
-                    color={`${activeItem === 'users' ? 'green' : 'none'}`}
+                    color={`${activeItem === 'users' ? 'yellow' : 'none'}`}
                     link
                 >
                     <Icon name='users' />
@@ -75,18 +75,18 @@ const Navbar = () => {
                     name='coffee'
                     active={activeItem === 'coffee'}
                     onClick={handleItemClick}
-                    color={`${activeItem === 'coffee' ? 'green' : 'none'}`}
+                    color={`${activeItem === 'coffee' ? 'yellow' : 'none'}`}
                     link
                 >
-                    <Icon name='coffee' />
-          Coffee Break
+                    <Icon name='food' />
+          Lunch Break
         </Menu.Item>
                 <Menu.Item
                     name='user'
                     active={activeItem === 'user'}
                     onClick={handleItemClick}
                     position="right"
-                    color={`${activeItem === 'user' ? 'green' : 'none'}`}
+                    color={`${activeItem === 'user' ? 'yellow' : 'none'}`}
                     link
                 >
                     <Icon name='user' />

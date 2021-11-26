@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { Menu } from 'semantic-ui-react';
 import {TransitionablePortal, Segment, Button, Header, Icon, Embed} from 'semantic-ui-react';
 import oti from '../../images/oti.jpeg';
+import ReactPlayer from 'react-player/youtube'
+
 const CompanyMenu = () => {
 
     const [activeItem, setActiveItem] = useState('')
@@ -20,20 +22,25 @@ const CompanyMenu = () => {
     }
     return (
         <div>
-            <Menu secondary fluid widths={3}>
+            <Menu secondary fluid widths={4}>
                 <Menu.Item
-                    name='buy'
-                    active={activeItem === 'buy'}
+                    name='About OTI'
+                    active={activeItem === 'aboutoti'}
                     onClick={aboutOnClick}
                 />
                 <Menu.Item
-                    name='sell'
-                    active={activeItem === 'sell'}
+                    name='Auditorium'
+                    active={activeItem === 'auditorium'}
                     onClick={handleItemClick}
                 />
                 <Menu.Item
-                    name='rent'
-                    active={activeItem === 'rent'}
+                    name='Notice Board'
+                    active={activeItem === 'noticeboard'}
+                    onClick={handleItemClick}
+                />
+                 <Menu.Item
+                    name='Departments'
+                    active={activeItem === 'departments'}
                     onClick={handleItemClick}
                 />
             </Menu>
@@ -50,12 +57,15 @@ const CompanyMenu = () => {
                         width: '100vh'
                     }}
                 >
-                    <Embed 
+                    <ReactPlayer url='https://www.youtube.com/watch?v=fBMCqWwHOkA' 
+                                 placeholder={oti}
+                    />
+                    {/* <Embed 
                         source="youtube"
                         url="https://www.youtube.com/watch?v=fBMCqWwHOkA"
                         placeholder={oti}
-                    />
-                    <Button basic animated color='green' style={{marginLeft: '40%', marginTop: '10px'}} onClick={onclose}>
+                    /> */}
+                    <Button basic animated color='yellow' style={{marginLeft: '40%', marginTop: '10px'}} onClick={onclose}>
                         <Button.Content visible>Close</Button.Content>
                         <Button.Content hidden>
                             <Icon name='window close outline' />
