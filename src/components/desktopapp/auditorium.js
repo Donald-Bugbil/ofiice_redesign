@@ -1,12 +1,13 @@
 import React from 'react';
+import { Header } from 'semantic-ui-react';
 import { Image } from 'semantic-ui-react';
 import coming1 from '../../images/comingsoon1.jpg';
 
 function Auditorium() {
     return (
         <div>
-           <h1>SOMETHING AWESOME IS COMING</h1> 
-           <h4>It's going to be amazing!! Keep your fingers crossed!!!</h4>
+          <Header as='h1'>SOMETHING AWESOME IS COMING</Header>
+           <Header as='h3'>It's going to be amazing!! Keep your fingers crossed!!!</Header>
            <img src={coming1}/>
         </div>
     )

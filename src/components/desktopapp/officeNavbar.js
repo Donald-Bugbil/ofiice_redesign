@@ -31,7 +31,6 @@ const Navbar = () => {
                     <Icon name='archive' />
           Archive
         </Menu.Item>
-
                 <Menu.Item
                     name='chats'
                     active={activeItem === 'chats'}
