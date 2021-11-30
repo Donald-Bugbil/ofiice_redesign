@@ -1,7 +1,7 @@
 import React from 'react';
 import {Menu} from 'semantic-ui-react';
 import {useState} from 'react';
-
+import Feed from '../desktopapp/feed'
 
 const PostMenu = () =>{
 
@@ -17,8 +17,9 @@ const PostMenu = () =>{
                 active={activeItem === 'live wall'}
                 onClick={handleItemClick}
             >
-                Live Wall
+            Live Wall
             </Menu.Item>
+            
             <Menu.Item
                 name="networking"
                 active={activeItem === 'networking'}
@@ -26,6 +27,8 @@ const PostMenu = () =>{
             >
                 Networking
             </Menu.Item>
+
+           
         </Menu>
     )
 }
