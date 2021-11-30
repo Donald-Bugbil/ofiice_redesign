@@ -3,6 +3,9 @@ import { useState } from 'react';
 import { Icon, Menu } from 'semantic-ui-react';
 import Home from './home';
 import oti from '../../images/oti.jpeg';
+import Notice from '../desktopapp/notice'
+import Auditorium from '../desktopapp/auditorium';
+
 const Navbar = () => {
 
     const [activeItem, setActiveItem] = useState('home')
@@ -92,7 +95,6 @@ const Navbar = () => {
                     <Icon name='user' />
           My Account
         </Menu.Item>
-
 
             </Menu>
             <Home/>
