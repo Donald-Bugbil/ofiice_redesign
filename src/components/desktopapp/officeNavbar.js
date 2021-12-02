@@ -53,14 +53,14 @@ const Navbar = () => {
         </Menu.Item>
 
                 <Menu.Item
-                    name='wall'
-                    active={activeItem === 'wall'}
+                    name='agenda'
+                    active={activeItem === 'agenda'}
                     onClick={handleItemClick}
-                    color={`${activeItem === 'wall' ? 'yellow' : 'none'}`}
+                    color={`${activeItem === 'agenda' ? 'yellow' : 'none'}`}
                     link
                 >
-                    <Icon name='newspaper' />
-          Wall
+                    <Icon name='calendar check' />
+          Agenda
         </Menu.Item>
 
                 <Menu.Item
