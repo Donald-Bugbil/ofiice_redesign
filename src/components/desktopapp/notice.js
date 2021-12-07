@@ -1,13 +1,17 @@
 import React from 'react';
 import { Header } from 'semantic-ui-react';
-import { Image } from 'semantic-ui-react';
-import coming from '../../images/comingsoon.jpg'
+import coming2 from '../../images/coming2.jpg'
 
 function Notice() {
     return (
         <div>
-           <Header as='h1'>SLIDE SHOWING NOTICE BOARD. SOON ON YOUR SCREENS</Header>
-           <img  src={coming}/>
+         <Header style={{color: '#0419b4', marginTop: '30px', marginLeft: '320px' }}as='h1'>
+          GET READY FOR NEWLY DESIGNED NOTICE BOARD 
+          <br/>
+          SOON ON YOUR SCREENS!
+         </Header>
+         <br/>
+          <img style={{width: '220vh'}} src={coming2}/>
         </div>
     )
 }

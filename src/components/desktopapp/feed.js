@@ -5,28 +5,28 @@ import { Label } from 'semantic-ui-react';
 
 const FeedExampleBasic = () => (
   <Feed>
-     <Label as='a' image>
+    <Label as='a' image>
       <img src='/images/avatar/small/joe.jpg' />
       Esthy Asante
-     </Label>
+    </Label>
      <br/>
      <br/>
       <Input placeholder="What's on your mind?" />
     <Feed.Event>
-      <Feed.Label>
+    <Feed.Label>
         <img src='/images/avatar/small/elliot.jpg' />
-      </Feed.Label>
-      <Feed.Content>
-        <Feed.Summary
+    </Feed.Label>
+    <Feed.Content>
+    <Feed.Summary
           date='2 Days Ago'
           user='Esthy Asante'
-          />
+    />
         
-         <Feed.Extra text>
+    <Feed.Extra text>
          Hello Everyone. Today is a new day, get motivated and work with positivity. 
          Happy Working Day Everyone!!!
-        </Feed.Extra>
-        <Feed.Meta>
+    </Feed.Extra>
+      <Feed.Meta>
           <Feed.Like>
             <Icon name='like' />4 Likes
           </Feed.Like>
