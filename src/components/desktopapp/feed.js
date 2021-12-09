@@ -3,7 +3,7 @@ import { Feed, Icon } from 'semantic-ui-react';
 import { Input } from 'semantic-ui-react';
 import { Label } from 'semantic-ui-react';
 
-const FeedExampleBasic = () => (
+const Feeds = () => (
   <Feed>
     <Label as='a' image>
       <img src='/images/avatar/small/joe.jpg' />
@@ -126,4 +126,4 @@ const FeedExampleBasic = () => (
   </Feed>
 )
 
-export default FeedExampleBasic
+export default Feeds;

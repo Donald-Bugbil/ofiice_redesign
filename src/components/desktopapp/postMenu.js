@@ -1,7 +1,7 @@
 import React from 'react';
 import {Menu} from 'semantic-ui-react';
 import {useState} from 'react';
-import Feed from '../desktopapp/feed'
+import Feeds from '../desktopapp/feed'
 
 const PostMenu = () =>{
 
