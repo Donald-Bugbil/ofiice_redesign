@@ -22,6 +22,7 @@ const PostMenu = () =>{
     // }
 
     return (
+        <div>
         <Menu secondary pointing fluid widths={2}>
             <Menu.Item
                 name="live wall"
@@ -41,6 +42,10 @@ const PostMenu = () =>{
 
            
         </Menu>
+        {
+            activeItem === "live wall" ? <Feeds/>: 'none'
+        }
+        </div>
     )
 }
 
